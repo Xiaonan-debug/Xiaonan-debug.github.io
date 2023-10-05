@@ -15,7 +15,7 @@ My research interests are primarily in general system area. My past research exp
 
 ## Publication
 
-- Yichao Fu<sup>*</sup>, **Xiaonan LUO<sup>*</sup>**, Cheng Wan, Zhifan Ye, Yingyan Lin, "[VR-BNS: Variance Reduction for Boundary Node Sampling towards GNN Training](./files/FaaSwap.pdf)", (In preparation)
+<!-- - Yichao Fu<sup>*</sup>, **Xiaonan LUO<sup>*</sup>**, Cheng Wan, Zhifan Ye, Yingyan Lin, "[VR-BNS: Variance Reduction for Boundary Node Sampling towards GNN Training](./files/FaaSwap.pdf)", (In preparation) -->
 - Minchen Yu, Ao Wang, Dong Chen, Haoxuan Yu, **Xiaonan Luo**, Zhuohao Li, Wei Wang, Ruichuan Chen, Dapeng Nie, Haoran Yang, "[FaaSwap: SLO-Aware, GPU-Efficient Serverless Inference via Model Swapping](./files/FaaSwap.pdf)", (Under review)
 
 ## Projects
