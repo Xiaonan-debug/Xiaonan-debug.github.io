@@ -13,12 +13,6 @@ My research interests are primarily in general system area. My past research exp
 
 [**CV**](./files/LUO_Xiaonan_CV.pdf).
 
-## Acaemic Background
-
-- **The Hong Kong University of Science and Technology(HKUST)** , Hong Kong, Sep.2020 - Present
-B.S. in Data Science and Computer Science
--
-
 ## Publication
 
 - Yichao Fu<sup>*</sup>, **Xiaonan LUO<sup>*</sup>**, Cheng Wan, Zhifan Ye, Yingyan Lin, "[VR-BNS: Variance Reduction for Boundary Node Sampling towards GNN Training](./files/FaaSwap.pdf)", (In preparation)
