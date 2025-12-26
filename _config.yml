@@ -9,7 +9,7 @@ last_name: Luo
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  PhD Student at University of Notre Dame. Research interests in large language models, data-centric AI, and machine learning systems.
+  PhD Student at University of Notre Dame. Research interests in large language models, multi-agent systems, and scientific AI.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.

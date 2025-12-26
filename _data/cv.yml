@@ -26,22 +26,18 @@
 - title: Research Interests
   type: nested_list
   contents:
-    - title: Reasoning and Tool-Augmented Foundation Models
+    - title: LLM Post-Training & Evaluation
       items:
-        - Explores how to endow foundation models with flexible, context-aware reasoning
-        - Ability to orchestrate external tools and domain knowledge
-    - title: Data-Centric Optimization
+        - Explores how to improve LLMs reasoning and the ability to orchestrate external tools and domain knowledge
+        - Emphasizes data-centric methods for improving the reliability, robustness, and evaluability of LLMs
+    - title: Multi-Agent Systems
       items:
-        - Emphasizes data-centric methods for improving reliability and robustness
-        - Focuses on evaluability of AI systems
+        - Investigates how multiple AI agents can collaborate, communicate, and coordinate
+        - Focuses on solving complex tasks that require diverse expertise and perspectives
     - title: Scientific AI
       items:
         - Studies how AI systems can accelerate scientific discovery
-        - Focuses on domains such as chemistry and natural sciences
-    - title: Efficient AI Systems
-      items:
-        - Investigates systems and infrastructure for modern AI models
-        - Making AI models cheaper, faster, and more accessible in practice
+        - Focuses on domains such as chemistry and biomedical sciences
 
 - title: Publications
   type: time_table

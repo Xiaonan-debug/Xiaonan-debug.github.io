@@ -27,13 +27,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a first-year PhD student at the Computer Science and Engineering (CSE) of the [University of Notre Dame](https://www.nd.edu/), where I am fortunate to be advised by Prof. [Xiangliang Zhang](https://sites.nd.edu/xiangliang-zhang/). I received my Bachelor's degree from the [Hong Kong University of Science and Technology (HKUST)](https://hkust.edu.hk/).
+I am a second-year PhD student at the Computer Science and Engineering (CSE) of the [University of Notre Dame](https://www.nd.edu/), where I am fortunate to be advised by Prof. [Xiangliang Zhang](https://sites.nd.edu/xiangliang-zhang/). I received my Bachelor's degree from the [Hong Kong University of Science and Technology (HKUST)](https://hkust.edu.hk/).
 
 ## Research Interests
 
-My research interests lie in **large language models** and **data-centric AI** with a focus on:
+My research interests lie in **large language models (LLM)** with a focus on:
 
-- **Reasoning and Tool-Augmented Foundation Models**: explores how to endow foundation models with flexible, context-aware reasoning and the ability to orchestrate external tools and domain knowledge.
-- **Data-Centric Optimization**: emphasizes data-centric methods for improving the reliability, robustness, and evaluability of AI systems.
-- **Scientific AI**: studies how AI systems can accelerate scientific discovery in domains such as chemistry and the natural sciences.
-- **Efficient AI Systems**: investigates systems and infrastructure that make modern AI models cheaper, faster, and more accessible in practice.
+- **LLM Post-Training & Evaluation**: explores how to improve LLMs reasoning and the ability to orchestrate external tools and domain knowledge; emphasizes data-centric methods for improving the reliability, robustness, and evaluability of LLMs.
+- **Multi-Agent Systems**: investigates how multiple AI agents can collaborate, communicate, and coordinate to solve complex tasks that require diverse expertise and perspectives.
+- **Scientific AI**: studies how AI systems can accelerate scientific discovery in domains such as chemistry and the biomedical sciences.

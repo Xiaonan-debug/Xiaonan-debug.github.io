@@ -6,7 +6,7 @@
     "email": "xluo6@nd.edu",
     "phone": "",
     "url": "https://xiaonan-debug.github.io",
-    "summary": "First-year Ph.D. student at the University of Notre Dame, focusing on large language models, data-centric AI, and machine learning systems.",
+    "summary": "Ph.D. student at the University of Notre Dame, focusing on large language models with emphasis on post-training, evaluation, multi-agent systems, and scientific AI applications.",
     "location": {
       "address": "Computer Science and Engineering",
       "postalCode": "IN 46556",
@@ -132,10 +132,9 @@
       "name": "Research",
       "icon": "fa-solid fa-microscope",
       "keywords": [
-        "Reasoning and Tool-Augmented Foundation Models",
-        "Data-Centric Optimization",
-        "Scientific AI",
-        "Efficient AI Systems"
+        "LLM Post-Training & Evaluation",
+        "Multi-Agent Systems",
+        "Scientific AI"
       ]
     }
   ],
