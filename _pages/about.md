@@ -35,13 +35,8 @@ My recent first-author work includes **[SecProbe](https://xiaonan-debug.github.i
 
 I study **large language models (LLMs)**, with a focus on:
 
-- **Recursive Self-Improvement**: systems that get better by improving themselves, from research agents that keep findings across sessions and verify progress against fixed evaluators, to models trained on their own data without collapsing.
-- **Cybersecurity**: measuring and improving how coding agents find and repair real-world vulnerabilities, using executable tasks, exploit-based tests, and adaptive evaluation.
-- **Agents**: LLM agents that work over long horizons, including agent harnesses that learn from experience and the risks that emerge when many agents interact.
-- **Post-Training**: making models more capable and reliable through reinforcement learning and adaptive reasoning, including rewards for answers that are right for the right reasons.
-- **Synthetic Data**: when synthetic data helps and when it hurts, and how to generate, curate, and refine data around a model's actual weaknesses.
-
-## Academic Service
-
-- **Conference Reviewer**: ICLR 2027, KDD 2026, COLM 2026
-- **Journal Reviewer**: ACM Transactions on Knowledge Discovery from Data (TKDD)
+- **Recursive Self-Improvement**: systems that improve themselves, from self-evolving research agents to models trained on their own data.
+- **Cybersecurity**: evaluating and improving coding agents on real-world vulnerabilities.
+- **Agents**: long-horizon LLM agents that learn from experience.
+- **Post-Training**: reinforcement learning and adaptive reasoning for more capable, reliable models.
+- **Synthetic Data**: generating and curating data that targets a model's weaknesses without collapse.
