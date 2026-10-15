@@ -1,0 +1,296 @@
+# Content for the homepage (_layouts/home.liquid).
+# Edit this file to update the site; no layout changes needed.
+
+name: Xiaonan Luo
+role: Ph.D. Student, Computer Science & Engineering
+affiliation: University of Notre Dame
+location: Notre Dame, IN
+email: xluo6@nd.edu
+photo: /assets/img/prof_pic.jpg
+cv: /assets/pdf/cv.pdf
+
+links:
+  - label: Email
+    url: mailto:xluo6@nd.edu
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=35otsO4AAAAJ&hl=en
+  - label: GitHub
+    url: https://github.com/Xiaonan-debug
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/xiaonan-luo-3238ba205/
+  - label: CV
+    url: /assets/pdf/cv.pdf
+
+lead: >-
+  I study large language models that improve themselves and act in the world &mdash;
+  recursive self-improvement, cybersecurity, agents, post-training, and synthetic data.
+
+bio: >-
+  I am a Ph.D. student in Computer Science and Engineering at the
+  <a href="https://www.nd.edu/">University of Notre Dame</a>, advised by
+  Prof. <a href="https://sites.nd.edu/xiangliang-zhang/">Xiangliang Zhang</a>.
+  My first-author work builds adaptive evaluation for coding agents on real-world
+  security vulnerabilities, synthetic-data training that does not collapse, and
+  automatic optimization of benchmark datasets. Previously, I was a Student
+  Researcher at <a href="https://bakeai.inc/">Bake AI</a>, working on self-evolving
+  research agents, and received my B.S. in Data Science and Computer Science from
+  <a href="https://hkust.edu.hk/">HKUST</a>.
+
+stats:
+  as_of: Oct 2026
+  items:
+    - value: "145"
+      label: Citations
+    - value: "6"
+      label: h-index
+    - value: "12"
+      label: Papers
+
+# First-author work, newest first. fig: secprobe | kite | refinelab
+work:
+  - kicker: arXiv &middot; Sep 2026
+    fig: secprobe
+    title: "SecProbe: Adaptive Evaluation of Coding Agents on Cybersecurity Vulnerabilities"
+    authors: Xiaonan Luo, Yue Huang, Kehan Guo, Ping He, Chuan Zou, Chujie Gao, Lichi Li, Yuchen Ma, Zhangchen Xu, Zichen Chen, Yufei Han, Xiangliang Zhang
+    summary: >-
+      Static benchmarks spend most of their budget on tasks that tell us little about a
+      given agent. SecProbe treats evaluation as measurement: it uses Item Response
+      Theory to estimate a coding agent's ability on the fly, selects the
+      repository-scale vulnerability-repair tasks that are most informative at that
+      ability level, and synthesizes new executable tasks, with exploit-based tests and
+      reference patches, when the existing pool lacks coverage.
+    metrics:
+      - { value: "353", label: repository-scale tasks }
+      - { value: "151", label: CWE types }
+      - { value: "6", label: programming languages }
+      - { value: "9", label: frontier models evaluated }
+      - { value: "28.33%", label: best success rate }
+      - { value: "29.5%", label: fewer tasks for the same estimate }
+    caption: Tasks whose difficulty sits near an agent's current ability estimate carry the most information. SecProbe evaluates on those tasks and synthesizes new ones when the pool has gaps.
+    links:
+      - { label: Project page, url: "https://xiaonan-debug.github.io/secprobe-page/" }
+      - { label: Paper, url: "https://arxiv.org/abs/2609.33763" }
+      - { label: PDF, url: "https://arxiv.org/pdf/2609.33763" }
+
+  - kicker: arXiv &middot; Jul 2026
+    fig: kite
+    title: "Learning from Synthetic Data without Model Collapse in Iterative Instruction Tuning"
+    authors: Xiaonan Luo, Yue Huang, Kehan Guo, Ping He, Chuan Zou, Ting Hua, Xiangliang Zhang
+    summary: >-
+      Training a model on its own synthetic data, generation after generation, is
+      widely expected to cause collapse. Using DINA-based skill diagnosis, we show that
+      collapse in iterative instruction tuning is a polarization of competence:
+      synthetic training reinforces skills that are already strong and erodes those
+      that are weakly supported. We propose KITE, which keeps improvement stable
+      across generations.
+    points:
+      - title: Weakness-guided generation
+        body: Diagnoses which skills a model lacks and generates candidate instructions that target them.
+      - title: Boundary-aware curation
+        body: Keeps examples near the model's uncertainty boundary, where training signal is highest.
+      - title: Stable over generations
+        body: More stable multi-generation gains than strong synthetic-data baselines across reasoning benchmarks.
+    caption: Illustration. Naive self-training pulls strong and weak skills apart over generations; KITE raises both.
+    links:
+      - { label: Paper, url: "https://arxiv.org/abs/2607.17043" }
+      - { label: PDF, url: "https://arxiv.org/pdf/2607.17043" }
+
+  - kicker: AAAI 2026
+    fig: refinelab
+    title: "Better Datasets Start From RefineLab: Automatic Optimization for High-Quality Dataset Refinement"
+    authors: Xiaonan Luo*, Yue Huang*, Ping He, Xiangliang Zhang
+    summary: >-
+      Benchmarks drift away from what they are meant to measure. RefineLab treats QA
+      dataset refinement as an optimization problem: given explicit quality targets
+      and a token budget, it formulates refinement as an integer linear program that
+      selects which coverage, difficulty, and factual-consistency edits to apply, so the
+      refined dataset matches the targets.
+    points:
+      - title: Refinement as an ILP
+        body: Chooses edits under a token budget to meet explicit coverage, difficulty, and consistency targets.
+      - title: Modular operators
+        body: Refinement operators that can be combined and evaluated independently.
+      - title: Validated on standard benchmarks
+        body: Stable evaluation improvements on MMLU, GSM8K, and HumanEval.
+    caption: Schematic. Candidate edits are scored against quality targets; an ILP picks the best set within the token budget.
+    links:
+      - { label: Paper, url: "https://arxiv.org/abs/2511.06530" }
+      - { label: PDF, url: "https://arxiv.org/pdf/2511.06530" }
+
+research:
+  - title: Recursive self-improvement
+    body: Systems that get better by improving themselves, from research agents that keep findings across sessions and verify progress against fixed evaluators, to models trained on their own data without collapsing.
+  - title: Cybersecurity
+    body: Measuring and improving how coding agents find and repair real-world vulnerabilities, with executable tasks, exploit-based tests, and adaptive evaluation.
+  - title: Agents
+    body: LLM agents that operate over long horizons, including agent harnesses that learn from experience and the risks that emerge when many agents interact.
+  - title: Post-training
+    body: Post-training that makes models more capable and reliable, including adaptive reasoning strategies and rewards for answers that are right for the right reasons.
+  - title: Synthetic data
+    body: When synthetic data helps and when it hurts, and how to generate, curate, and refine data around a model's actual weaknesses and an evaluation's actual goals.
+
+news:
+  - date: Oct 2026
+    text: Wrapped up my time as a Student Researcher at <a href="https://bakeai.inc/">Bake AI</a>, contributing to <a href="https://bakeai.inc/research/articles/epi/">Épi</a>, a self-evolving research framework that reported 120 record-setting mathematical results.
+  - date: Sep 2026
+    text: <strong>SecProbe</strong> is out on <a href="https://arxiv.org/abs/2609.33763">arXiv</a>. It uses adaptive, IRT-based evaluation of coding agents on real-world vulnerability repair.
+  - date: 2026
+    text: <strong>Coherence-Enhanced Policy Optimization</strong> accepted to EMNLP 2026, and <strong>Synthetic Interaction Data for Personalization</strong> accepted to KDD 2026 (Datasets &amp; Benchmarks).
+  - date: Jul 2026
+    text: New preprint, <a href="https://arxiv.org/abs/2607.17043"><strong>KITE</strong></a>, on learning from synthetic data without model collapse in iterative instruction tuning.
+  - date: 2026
+    text: Serving as a reviewer for ICLR 2027, KDD 2026, COLM 2026, and TKDD.
+  - date: Nov 2025
+    text: <strong>RefineLab</strong> accepted to AAAI 2026.
+  - date: Sep 2025
+    text: <strong>AdaReasoner</strong> (Spotlight) and <strong>ChemOrch</strong> accepted to NeurIPS 2025.
+
+# topics: security | agents | posttraining | data | evaluation | science | systems
+publications:
+  - title: "SecProbe: Adaptive Evaluation of Coding Agents on Cybersecurity Vulnerabilities"
+    authors: Xiaonan Luo, Yue Huang, Kehan Guo, Ping He, Chuan Zou, Chujie Gao, Lichi Li, Yuchen Ma, Zhangchen Xu, Zichen Chen, Yufei Han, Xiangliang Zhang
+    venue: arXiv preprint
+    year: 2026
+    badge: Preprint
+    first: true
+    selected: true
+    topics: [security, agents, evaluation]
+    links:
+      - { label: Project page, url: "https://xiaonan-debug.github.io/secprobe-page/" }
+      - { label: arXiv, url: "https://arxiv.org/abs/2609.33763" }
+
+  - title: "Learning from Synthetic Data without Model Collapse in Iterative Instruction Tuning"
+    authors: Xiaonan Luo, Yue Huang, Kehan Guo, Ping He, Chuan Zou, Ting Hua, Xiangliang Zhang
+    venue: arXiv preprint
+    year: 2026
+    badge: Preprint
+    first: true
+    selected: true
+    topics: [data, posttraining]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2607.17043" }
+
+  - title: "MemoHarness: Agent Harnesses That Learn from Experience"
+    authors: Yue Huang, Wenjie Wang, Han Bao, Yuchen Ma, Xiaonan Luo, Yi Nian, Haomin Zhuang, Zheyuan Liu, Yue Zhao, Xiangliang Zhang
+    venue: arXiv preprint
+    year: 2026
+    badge: Preprint
+    topics: [agents]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2607.14159" }
+
+  - title: "UXBench: Measuring the Actionability of LLM-Generated UX Critiques"
+    authors: Wenjie Wang, Yue Huang, Zipeng Ling, Han Bao, Hang Hua, Xiaonan Luo, Yu Jiang, Shiyi Du, Yuexing Hao, Xiaomin Li, Yuchen Ma, Dianzhuo Wang, Yanfang Ye, Xiangliang Zhang
+    venue: arXiv preprint
+    year: 2026
+    badge: Preprint
+    topics: [evaluation, agents]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2606.16262" }
+
+  - title: "Right Answers for the Right Reasons: Coherence-Enhanced Policy Optimization for Large Language Models"
+    authors: Xiangqi Wang, Yue Huang, Yujun Zhou, Xiaonan Luo, Kehan Guo, Xiangliang Zhang
+    venue: Conference on Empirical Methods in Natural Language Processing
+    year: 2026
+    badge: EMNLP
+    topics: [posttraining]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2509.23095" }
+
+  - title: "Synthetic Interaction Data for Scalable Personalization in Large Language Models"
+    authors: Yuchen Ma, Yue Huang, Wenjie Wang, Xiaonan Luo, Xiangliang Zhang, Stefan Feuerriegel
+    venue: ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Datasets &amp; Benchmarks Track
+    year: 2026
+    badge: KDD
+    topics: [data]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2602.12394" }
+
+  - title: "Reliable Control-Point Selection for Steering Reasoning in Large Language Models"
+    authors: Haomin Zhuang, Hojun Yoo, Xiaonan Luo, Kehan Guo, Xiangliang Zhang
+    venue: arXiv preprint
+    year: 2026
+    badge: Preprint
+    topics: [posttraining]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2604.02113" }
+
+  - title: "Emergent Social Intelligence Risks in Generative Multi-Agent Systems"
+    authors: Yue Huang, Yu Jiang, Wenjie Wang, Haomin Zhuang, Xiaonan Luo, Yuchen Ma, Zhangchen Xu, Zichen Chen, Nuno Moniz, Zinan Lin, Pin-Yu Chen, Nitesh V. Chawla, Nouha Dziri, Huan Sun, Xiangliang Zhang
+    venue: Trustworthy AI for Good Workshop @ ICML
+    year: 2026
+    badge: ICML-W
+    topics: [agents]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2603.27771" }
+
+  - title: "Better Datasets Start From RefineLab: Automatic Optimization for High-Quality Dataset Refinement"
+    authors: Xiaonan Luo*, Yue Huang*, Ping He, Xiangliang Zhang
+    venue: AAAI Conference on Artificial Intelligence
+    year: 2026
+    badge: AAAI
+    first: true
+    selected: true
+    topics: [data, evaluation]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2511.06530" }
+
+  - title: "AdaReasoner: Adaptive Reasoning Enables More Flexible Thinking"
+    authors: Xiangqi Wang, Yue Huang, Yanbo Wang, Xiaonan Luo, Kehan Guo, Yujun Zhou, Xiangliang Zhang
+    venue: Advances in Neural Information Processing Systems
+    year: 2025
+    badge: NeurIPS
+    note: Spotlight
+    selected: true
+    topics: [posttraining]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2505.17312" }
+
+  - title: "ChemOrch: Empowering LLMs with Chemical Intelligence via Synthetic Instructions"
+    authors: Yue Huang, Zhengzhe Jiang, Xiaonan Luo, Kehan Guo, Haomin Zhuang, Yujun Zhou, Zhengqing Yuan, Xiaoqi Sun, Jules Schleinitz, Yanbo Wang, Shuhao Zhang, Mihir Surve, Nitesh V. Chawla, Olaf Wiest, Xiangliang Zhang
+    venue: Advances in Neural Information Processing Systems
+    year: 2025
+    badge: NeurIPS
+    selected: true
+    topics: [data, science]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2509.16543" }
+
+  - title: "Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference"
+    authors: Mingyu Yu, Ao Wang, Dong Chen, Haoxuan Yu, Xiaonan Luo, Zhuzhong Li, Wei Wang, Ruichuan Chen, Dapeng Nie, Kaiyuan Yang, Xiaobing Chen, Mingyang Liu, Yijia Zhang, Mao Yang
+    venue: USENIX Annual Technical Conference
+    year: 2025
+    badge: ATC
+    topics: [systems]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2306.03622" }
+
+topics:
+  - { key: all, label: All }
+  - { key: first, label: First-author }
+  - { key: security, label: Cybersecurity }
+  - { key: agents, label: Agents }
+  - { key: posttraining, label: Post-training }
+  - { key: data, label: Synthetic data }
+
+experience:
+  - when: Aug 2026 – Oct 2026
+    title: Student Researcher
+    org: Bake AI
+    url: https://bakeai.inc/
+    body: Contributed to <a href="https://bakeai.inc/research/articles/epi/">Épi</a>, a self-evolving research framework whose agents keep findings across sessions, explore new strategies, and verify progress against fixed evaluators. The project reported 120 record-setting mathematical results.
+
+education:
+  - when: 2024 – 2028 (expected)
+    title: Ph.D. in Computer Science and Engineering
+    org: University of Notre Dame
+    body: Advisor &mdash; Prof. Xiangliang Zhang
+  - when: 2024
+    title: B.S. in Data Science and Computer Science
+    org: The Hong Kong University of Science and Technology
+
+service:
+  - role: Conference Reviewer
+    items: ICLR 2027 &middot; KDD 2026 &middot; COLM 2026
+  - role: Journal Reviewer
+    items: ACM Transactions on Knowledge Discovery from Data (TKDD)

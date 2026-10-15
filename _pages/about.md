@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: home
 title: about
 permalink: /
 subtitle: Department of Computer Science and Engineering, <a href='https://www.nd.edu/'>University of Notre Dame</a>
