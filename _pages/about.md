@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 8 # leave blank to include all the news in the `_news` folder
 
@@ -40,10 +40,6 @@ I study **large language models (LLMs)**, with a focus on:
 - **Agents**: LLM agents that work over long horizons, including agent harnesses that learn from experience and the risks that emerge when many agents interact.
 - **Post-Training**: making models more capable and reliable through reinforcement learning and adaptive reasoning, including rewards for answers that are right for the right reasons.
 - **Synthetic Data**: when synthetic data helps and when it hurts, and how to generate, curate, and refine data around a model's actual weaknesses.
-
-## Experience
-
-- **Bake AI**, Student Researcher (Aug 2026 – Oct 2026): contributed to [Épi](https://bakeai.inc/research/articles/epi/), a self-evolving research framework whose agents keep findings across sessions, explore new strategies, and verify progress against fixed evaluators. The project reported 120 record-setting mathematical results.
 
 ## Academic Service
 
